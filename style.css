@@ -14,9 +14,6 @@ body {
   overflow-x: hidden;
 }
 
-body{
-	 touch-action: pan-x pan-y;
-}
 /* Main Section */
 
 .container,
