@@ -869,6 +869,7 @@ footer ul li:first-child {
   .marked-h1{
     color: #1f5146;
     text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+	  -webkit-text-stroke: 0px white;
   }
 
 }
