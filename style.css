@@ -868,7 +868,7 @@ footer ul li:first-child {
   .marked-h1{
     color: #1f5146;
     text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-	  -webkit-text-stroke: 0px white;
+    -webkit-text-stroke: 0px white;
   }
 
 }
@@ -1250,8 +1250,12 @@ h2 {
   height: 100px;
 }
 #play:hover {
-  width: 150px;
-  height: 150px;
+  width: 128px;
+  height: 128px;
+}
+.clickstyle{
+  width: 150px!important;
+  height: 150px!important;
 }
 }
 @media only screen and (max-width: 400px) {
