@@ -594,7 +594,7 @@
         </div>
 
         <div class="video-wrapper">
-          <button type="button" id="play">
+          <button type="button" id="play" class="play">
             <img alt="play video" src="./assets/video-play.png" />
           </button>
           <video
@@ -621,6 +621,80 @@
           </video>
         </div>
       </div>
+    </section> 
+
+    <!-- video-section-xl -->
+    <section class="video-section-xl">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="video-text-background">
+              <div class="container">
+                <div class="video-text">
+                  <h2>
+                    <span class="marked-h1">WATCH</span>
+                    THE VIDEO
+                  </h2>
+                  <ul>
+                    <li>
+                      <div class="video-li">Needs Assessment</div>
+                      <p>
+                        The Advocacy Evaluation Toolkit contains the instruments
+                        used to collect data for evaluating the Consumer Voices for
+                        Coverage program.
+                      </p>
+                    </li>
+                    <li>
+                      <div class="video-li">Insurance Advocacy</div>
+                      <p>
+                        We are committed to advocating for appropriate coverage and
+                        payment policies.
+                      </p>
+                    </li>
+                    <li>
+                      <div class="video-li">Treatment Planning & Placement</div>
+                      <p>
+                        Patients can better understand medical procedures, discharge
+                        instructions, etc.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="video-wrapper">
+              <button type="button" id="play-xl">
+                <img alt="play video" src="./assets/video-play.png" />
+              </button>
+              <video
+                playsinline
+                muted
+                loop
+                poster="./assets/video-cover.png"
+                class="video"
+                id="video-xl" 
+              >
+                <source
+                  src="https://mazwai.com/videvo_files/video/free/2016-01/small_watermarked/Forest_15_2_Videvo_preview.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="https://mazwai.com/videvo_files/video/free/2016-01/small_watermarked/Forest_15_2_Videvo_preview.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="https://mazwai.com/videvo_files/video/free/2016-01/small_watermarked/Forest_15_2_Videvo_preview.mov"
+                  type="video/mov"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
@@ -640,7 +714,6 @@
     </footer>
 
     <!-- Owl Carousel  -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="main.js"></script>
   </body>
