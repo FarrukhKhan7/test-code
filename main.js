@@ -65,6 +65,21 @@ $(document).ready(function () {
 
 });
 
+const playButton = document.getElementById("play");
+const video = document.getElementById("video");
+
+
+function togglePlay() {
+  if (video.paused || video.ended) {
+    video.play();
+  } else {
+    video.pause();
+  }
+  playButton.classList.toggle("clickstyle");
+}
+
+playButton.addEventListener("click", togglePlay);
+
 // FORM VAIDATION
 const myFunction = (e) => {
   if (e.value.length >= 1) {
@@ -84,18 +99,16 @@ if(e.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)){
 }
 
 // VIDEO FUNCTIONALITY
-const playButton = document.getElementById("play");
-const video = document.getElementById("video");
+const playButtonXl = document.getElementById('play-xl');
+const videoXl = document.getElementById("video-xl");
 
-function togglePlay() {
-  if (video.paused || video.ended) {
-    video.play();
+function togglePlayXl() {
+  if (videoXl.paused || videoXl.ended) {
+    videoXl.play();
   } else {
-    video.pause();
+    videoXl.pause();
   }
-  playButton.classList.toggle("clickstyle");
+  playButtonXl.classList.toggle("clickstyle");
 }
 
-playButton.addEventListener("click", togglePlay);
-
-
+playButtonXl.addEventListener("click", togglePlayXl);
