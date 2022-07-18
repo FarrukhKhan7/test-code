@@ -65,21 +65,6 @@ $(document).ready(function () {
 
 });
 
-const playButton = document.getElementById("play");
-const video = document.getElementById("video");
-
-
-function togglePlay() {
-  if (video.paused || video.ended) {
-    video.play();
-  } else {
-    video.pause();
-  }
-  playButton.classList.toggle("clickstyle");
-}
-
-playButton.addEventListener("click", togglePlay);
-
 // FORM VAIDATION
 const myFunction = (e) => {
   if (e.value.length >= 1) {
@@ -100,15 +85,24 @@ if(e.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)){
 
 // VIDEO FUNCTIONALITY
 const playButtonXl = document.getElementById('play-xl');
-const videoXl = document.getElementById("video-xl");
+const playButton = document.getElementById("play");
+var modal = document.getElementById("myModal");
 
 function togglePlayXl() {
-  if (videoXl.paused || videoXl.ended) {
-    videoXl.play();
-  } else {
-    videoXl.pause();
-  }
-  playButtonXl.classList.toggle("clickstyle");
+  modal.style.display = "block";
+  playButton.classList.toggle("clickstyle");
 }
 
 playButtonXl.addEventListener("click", togglePlayXl);
+playButton.addEventListener("click", togglePlayXl);
+
+ var span = document.getElementsByClassName("close")[0];
+ 
+ span.onclick = function() {
+   modal.style.display = "none";
+ }
+ window.onclick = function(event) {
+   if (event.target == modal) {
+     modal.style.display = "none";
+   }
+ }
