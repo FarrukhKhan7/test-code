@@ -89,7 +89,7 @@ const playButton = document.getElementById("play");
 var modal = document.getElementById("myModal");
 
 function togglePlayXl() {
-  modal.style.display = "block";
+  modal.style.display = "flex";
   playButton.classList.toggle("clickstyle");
 }
 
