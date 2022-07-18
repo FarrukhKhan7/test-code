@@ -808,6 +808,8 @@ footer ul li:first-child {
 
 .modal {
   display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
   position: fixed; /* Stay in place */
   z-index: 9999; /* Sit on top */
   padding-top: 100px; /* Location of the box */
@@ -831,6 +833,7 @@ footer ul li:first-child {
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  border: none;
 }
 
 /* Add Animation */
@@ -1132,7 +1135,7 @@ footer ul li:first-child {
     margin-bottom: 40px;
 }
 .playvideo {
-  width: 80vw;
+  width: 90vw;
 }
 }
 @media only screen and (max-width: 650px) {
@@ -1424,6 +1427,13 @@ h2 {
 .clickstyle{
   width: 150px!important;
   height: 150px!important;
+}
+.close {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  right: -7px;
+    top: -6px;
 }
 }
 @media only screen and (max-width: 400px) {
